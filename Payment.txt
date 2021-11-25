@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticaret Örneği</title>
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\font-awesome\css\font-awesome.min.css">
+    <link rel="stylesheet" href="Content\site.css">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <!--JavaScript-->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+
+</head>
+<body class="image_">
+     
+    <!--navbar begin-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="HomePage.html">My Shop</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">
+                       <span class="fa fa-user-plus mr-2"></span> Register
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                       <span class="fa fa-sign-in mr2"></span> Login
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-user mr2"></span> Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                        <a class="dropdown-item" href="MyProfile.html">View Profile</a>
+                        <a class="dropdown-item" href="Addresses.html">My Addresses</a>
+                        <a class="dropdown-item" href="Orders.html">My Orders</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-bs-toggle="dropdown" 
+                       aria-haspopup="true" aria-expanded="false">
+                       <span class="fa fa-shopping-cart mr2"></span> My Basket
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlCart">
+                        <a class="dropdown-item" href="Product.html">Product 1</a>
+                        <a class="dropdown-item" href="Product.html">Product 2</a>
+                        <a class="dropdown-item" href="Product.html">Product 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Cart.html">Go to Cart</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-envelope mr2"></span> Messages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlMessages">
+                        <a class="dropdown-item" href="Message.html">Message 1</a>
+                        <a class="dropdown-item" href="Message.html">Message 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Messages.html">Messages</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html">
+                        <span class="fa fa-sign-out mr2"></span>Exit
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!--navbar end-->
+
+    
+    <div class="container">
+
+        <!--Content begin-->
+        <div class="row mt-4 mb-2">
+            
+            <div class="col-md-12">
+                <h2>Payment Page</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-2 text-center">
+                <h2>
+                    <span class="fa fa-credit-card fa-4x text-success"></span>
+                </h2>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group row">
+                    <label class="col-md-2 text-danger">Name &amp; Surname :</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="Recipient Name and Surname">
+                    </div>
+                </div><br>
+                <div class="form-group row">
+                    <label class="col-md-2 text-danger">Shipped Address :</label>
+                    <div class="col-md-4">
+                        <select class="form-select form-select-m" aria-label=".form-select-sm example">
+                            <option value="1">Home</option>
+                            <option value="2">Work</option>
+                            <option value="3">Other</option>
+                          </select>
+                    </div>
+                </div><br>
+                <div class="form-group row">
+                    <label class="col-md-2 text-danger">Invoice Address :</label>
+                    <div class="col-md-4">
+                        <select class="form-select form-select-m" aria-label=".form-select-sm example">
+                            <option value="1">Home</option>
+                            <option value="2">Work</option>
+                            <option value="3">Other</option>
+                          </select>
+                    </div>
+                </div><hr>
+
+                <div class="form-group row">
+                    <label class="col-md-2 text-danger">Ad &amp; Soyad :</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="Kart Sahibi Ad ve Soyad">
+                    </div>
+                </div><br>
+
+                <div class="form-group row">
+                    <label class="col-md-2 text-danger">Kart Numarası :</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="0000 0000 0000 0000" pattern="[0-9] {4} [0-9] {4} [0-9] {4} [0-9] {4}">
+                    </div>
+                </div><br>
+
+                <div class="form-group row">
+                    <label class="col-md-2 text-danger">CVC :</label>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" placeholder="000" pattern="[1-9] {3}">
+                    </div>
+                </div><br>
+
+                <div class="form-group row">
+                    <label class="col-md-2 text-danger">Exp. Date :</label>
+                    <div class="col-md-2">
+                       <select>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="02">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                       </select>
+                       <select>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            
+           
+
+        <div class="row my-2">
+            <div class="col-md-12 text-end">
+               <button type="submit" class="btn btn-success">
+                   <span class="fa fa-credit-card mr-2"></span> Make Payment
+               </button>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-10 offset-md-2">
+               <h1 class="text-success"> 
+                  <span class="fa fa-check"></span>
+                    <b>Payment Successfully.</b>
+               </h1>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae non reiciendis deleniti quod sunt a minus suscipit modi possimus odio maxime quidem ipsum neque natus, blanditiis magni iste inventore dolores.
+               </p>
+           </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-10 offset-md-2">
+               <h1 class="text-danger"> 
+                  <span class="fa fa-times"></span>
+                    <b>Payment Error.</b>
+               </h1>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae non reiciendis deleniti quod sunt a minus suscipit modi possimus odio maxime quidem ipsum neque natus, blanditiis magni iste inventore dolores.
+               </p>
+           </div>
+        </div>
+
+    </div>
+
+        
+
+        <!--Content end-->
+    </div>
+
+
+</body>
+</html>

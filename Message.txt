@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticaret Örneği</title>
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\font-awesome\css\font-awesome.min.css">
+    <link rel="stylesheet" href="Content\site.css">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <!--JavaScript-->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+
+</head>
+<body class="image_">
+     
+    <!--navbar begin-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="HomePage.html">My Shop</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">
+                       <span class="fa fa-user-plus mr-2"></span> Register
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                       <span class="fa fa-sign-in mr2"></span> Login
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-user mr2"></span> Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                        <a class="dropdown-item" href="MyProfile.html">View Profile</a>
+                        <a class="dropdown-item" href="Addresses.html">My Addresses</a>
+                        <a class="dropdown-item" href="Orders.html">My Orders</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-bs-toggle="dropdown" 
+                       aria-haspopup="true" aria-expanded="false">
+                       <span class="fa fa-shopping-cart mr2"></span> My Basket
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlCart">
+                        <a class="dropdown-item" href="Product.html">Product 1</a>
+                        <a class="dropdown-item" href="Product.html">Product 2</a>
+                        <a class="dropdown-item" href="Product.html">Product 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Cart.html">Go to Cart</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-envelope mr2"></span> Messages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlMessages">
+                        <a class="dropdown-item" href="Message.html">Message 1</a>
+                        <a class="dropdown-item" href="Message.html">Message 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Messages.html">Messages</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html">
+                        <span class="fa fa-sign-out mr2"></span>Exit
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!--navbar end-->
+
+    
+    <div class="container">
+
+        <!--Content begin-->
+        <div class="row mt-4 mb-2">
+            <div class="col-md-12">
+                <h3 class="text-danger">Topic : Lorem, ipsum dolor.</h3>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-12">
+
+              <div class="card bg-light my-4">
+                  <div class="card-header">
+                      <small class="text-muted">From Who : gayeyildiz</small>
+                  </div>
+                  <div class="card-body">
+                      <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sapiente, magni consequuntur ipsam repellendus, debitis dolorem voluptates architecto quod eaque fugit beatae autem sunt est quibusdam esse illum. Earum, nisi.
+                      </p>
+                  </div>
+                  <div class="card-footer text-end">
+                      <small class="text-muted">
+                          Date : 30.12.1997 03:30
+                      </small>
+                  </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-12">
+
+                <div class="card bg-light my-4">
+                    <div class="card-header">
+                        <small class="text-muted">From Who : gayeyildiz</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <small class="text-muted">
+                            Date : 30.12.1997 03:30
+                        </small>
+                    </div>
+                </div>
+  
+              </div>
+
+              <div class="col-md-12">
+
+                <div class="card bg-light my-4">
+                    <div class="card-header">
+                        <small class="text-muted">From Who : reyhanpehlivan</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough.
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <small class="text-muted">
+                            Date : 05.01.1998 03:30
+                        </small>
+                    </div>
+                </div>
+  
+              </div>
+
+              <div class="col-md-12">
+
+                <div class="card bg-light my-4">
+                    <div class="card-header">
+                        <small class="text-muted">From Who : gayeyildiz</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sapiente, magni consequuntur ipsam repellendus, debitis dolorem voluptates architecto quod eaque fugit beatae autem sunt est quibusdam esse illum. Earum, nisi.
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <small class="text-muted">
+                            Date : 30.12.1997 03:30
+                        </small>
+                    </div>
+                </div>
+  
+              </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <h4>Answer</h4>
+                    <hr>
+                </div>
+
+                <div class="form-group">
+                    <textarea cols="30" rows="5" name="messagebody" id="messagebody" placeholder="Message Text" class="form-control"></textarea>
+                </div><br>
+
+                <div class="form-group text-end">
+                    <button type="button" class="btn btn-success">
+                        <span class="fa fa-send mr-2"></span> Send
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Content end-->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticaret Örneği</title>
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\font-awesome\css\font-awesome.min.css">
+    <link rel="stylesheet" href="Content\site.css">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <!--JavaScript-->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+
+</head>
+<body class="image_">
+     
+    <!--navbar begin-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="HomePage.html">My Shop</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">
+                       <span class="fa fa-user-plus mr-2"></span> Register
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                       <span class="fa fa-sign-in mr2"></span> Login
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-user mr2"></span> Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                        <a class="dropdown-item" href="MyProfile.html">View Profile</a>
+                        <a class="dropdown-item" href="Addresses.html">My Addresses</a>
+                        <a class="dropdown-item" href="Orders.html">My Orders</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-bs-toggle="dropdown" 
+                       aria-haspopup="true" aria-expanded="false">
+                       <span class="fa fa-shopping-cart mr2"></span> My Basket
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlCart">
+                        <a class="dropdown-item" href="Product.html">Product 1</a>
+                        <a class="dropdown-item" href="Product.html">Product 2</a>
+                        <a class="dropdown-item" href="Product.html">Product 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Cart.html">Go to Cart</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-envelope mr2"></span> Messages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlMessages">
+                        <a class="dropdown-item" href="Message.html">Message 1</a>
+                        <a class="dropdown-item" href="Message.html">Message 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Messages.html">Messages</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html">
+                        <span class="fa fa-sign-out mr2"></span>Exit
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!--navbar end-->
+
+    
+    <div class="container">
+
+        <!--Content begin-->
+        <div class="row my-4">
+            <div class="col-md-12 my-4">
+               <h2>My Addresses</h2>
+            </div>
+        </div>
+
+       <div class="row">
+           <div class="col-md-12">
+               <table class="table table-striped table-hover text-center table-sm">
+                   <thead>
+                       <tr>
+                           <th>Address Definition</th>
+                           <th>Address Detail</th>
+                           <th></th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td>Home</td>
+                           <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, hic?</td>
+                           <td>
+                               <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                                  <span class="fa fa-edit"></span>
+                               </button>
+                               <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                <span class="fa fa-trash"></span>
+                             </button>
+                           </td>
+                       </tr>
+                       <tr>
+                        <td>Work</td>
+                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, hic?</td>
+                        <td>
+                            <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                               <span class="fa fa-edit"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                             <span class="fa fa-trash"></span>
+                          </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>School</td>
+                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, hic?</td>
+                        <td>
+                            <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                               <span class="fa fa-edit"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                             <span class="fa fa-trash"></span>
+                          </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, hic?</td>
+                        <td>
+                            <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                               <span class="fa fa-edit"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                             <span class="fa fa-trash"></span>
+                          </button>
+                        </td>
+                    </tr>
+                   </tbody>
+               </table>
+           </div>
+       </div>
+
+
+        <!--Content end-->
+    </div>
+
+
+      <!-- Modal Edit -->
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" data-bs-backdrop="static" aria-labelledby="editModalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="editModalTitle">Edit</h4>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" name="address_name" id="name" placeholder="Address Definition" class="form-control" />
+                </div><br>
+
+              <div class="form-group">
+                  <textarea cols="30" rows="5" name="address_desc" placeholder="Address Detail" id="editbio"  class="form-control"></textarea>
+              </div><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <span class="fa fa-close mr-2"></span>Close
+                  </button>
+                <button type="button" class="btn btn-warning">
+                    <span class="fa fa-save mr-2"></span>  Save
+                  </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalTitle">Delete</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4 md-offset-1">
+                        <center>
+                            <span class="fa fa-trash text-danger fa-3x mr-2"></span>
+                        </center>
+                    </div>
+                <div class="col-md-7 text-center">
+                    <p>Are you sure you want to delete?</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                    <span class="fa fa-times mr-2"></span>No
+                  </button>
+                <button type="button" class="btn btn-success">
+                    <span class="fa fa-check mr-2"></span>Yes
+                  </button>
+                  
+                
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+     <!--Footer begin-->
+     <div class="card card-default fixed-bottom text-center">
+        <div class="card-body">
+            <h5 class="card-title text-muted">My Shop Website</h5>
+            <div>
+            <a href="#" class="btn text-primary">
+                <span class="fa fa-twitter fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-danger">
+                <span class="fa fa-instagram fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-info">
+                <span class="fa fa-facebook fa-2x"></span>
+            </a>
+          </div>
+          <a href="mailto:mail@mail.com" class="btn btn-secondary btn-sm">
+              <span class="fa fa-at mr-2"></span>Send email
+          </a>
+        </div>
+        <div class="card-footer text-muted text-center">
+            Designed by Gaye Yıldız &copy; 2021
+        </div>
+    </div>
+
+
+    <!--Footer end-->
+
+</body>
+</html>
